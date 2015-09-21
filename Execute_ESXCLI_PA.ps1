@@ -1,8 +1,11 @@
 <#
+
 .LABEL
-Execute ESXCLI commands
+Execute ESXCLI commands1
+
 .DESCRIPTION
 Allows execution of ESXCLI commands against an vSphere host through PowerActions.
+
 #>
 
 param

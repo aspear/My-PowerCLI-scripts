@@ -1,9 +1,10 @@
 <#
-.MYNGC_REPORT
 .LABEL
 Get a list configured alarms
+
 .DESCRIPTION
 Retrieves a list of vSphere alarms that are enabled. Original script was pulled from the web and modified to be used in PowerActions.
+
 #>
 
 
