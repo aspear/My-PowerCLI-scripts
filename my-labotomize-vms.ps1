@@ -2,7 +2,7 @@
 .LABEL
 Labotomize VMs
 .DESCRIPTION
-Performs a Hard or Soft kill of a hung Virtual Machine.  This is version 4444.
+Performs a Hard or Soft kill of a hung Virtual Machine.  This is version 5.
 #>
 
 param
