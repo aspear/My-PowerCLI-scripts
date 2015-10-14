@@ -1,7 +1,7 @@
 <#
 
 .LABEL
-Execute ESXCLI commands1
+Execute ESXCLI commands
 
 .DESCRIPTION
 Allows execution of ESXCLI commands against an vSphere host through PowerActions.
@@ -14,6 +14,8 @@ param
    [VMware.VimAutomation.ViCore.Types.V1.Inventory.VMHost]
    $vmhost
 );
+
+# aaron is changing this file
 
 Function Invoke-ESXCLIcommand {
 # Prompt for Command to execute on guest OS
@@ -35,13 +37,14 @@ $global:script = $results.Values
 Invoke-Expression $script
 }
 
+
 Function Run-again {
 $title = "Run another?"
 $message = "Execute another command on $vmhost?"
 $yes = New-Object System.Management.Automation.Host.ChoiceDescription "&yes", "Prompts for another ScriptBlock"
 $no = New-Object System.Management.Automation.Host.ChoiceDescription "&no", "Exit the script"
 $options = [System.Management.Automation.Host.ChoiceDescription[]]($yes, $no)
-$result = $host.ui.PromptForChoice($title, $message, $options, 0) 
+$result = $host.ui.PromptForChoice($title, $message, $options, 0)
 
 switch ($result) {
         0 {Invoke-ESXCLIcommand
