@@ -1,7 +1,7 @@
 <#
 
 .LABEL
-Execute ESXCLI commands1
+Execute ESXCLI commands
 
 .DESCRIPTION
 Allows execution of ESXCLI commands against an vSphere host through PowerActions.
@@ -15,7 +15,7 @@ param
    $vmhost
 );
 
-# aaron added this comment just in testing
+# aaron is changing this file yet again, again
 
 Function Invoke-ESXCLIcommand {
 # Prompt for Command to execute on guest OS
@@ -36,6 +36,7 @@ $global:script = $results.Values
 # Run the command
 Invoke-Expression $script
 }
+
 
 Function Run-again {
 $title = "Run another?"
